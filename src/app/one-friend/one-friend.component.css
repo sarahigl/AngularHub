@@ -1,0 +1,11 @@
+.sectionFriend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.friend{
+    background-color: antiquewhite;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+}

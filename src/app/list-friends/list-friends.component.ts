@@ -8,5 +8,8 @@ import { OneFriendComponent } from '../one-friend/one-friend.component';
   styleUrl: './list-friends.component.css'
 })
 export class ListFriendsComponent {
-
+  listFriendsAuth : boolean = false
+  constructor(){
+    setTimeout(()=>{this.listFriendsAuth = true},3000)
+  }
 }

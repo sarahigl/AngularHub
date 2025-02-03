@@ -1,11 +1,9 @@
-<div class="sectionFriend">
-    <h6>one-friend :</h6>
-    <div class="friend">
-        <h3>{{oneFriendName}}</h3>
-        <p>status : 
-        {{getOneFriendStatus()}}</p>
-        <p>Bio : {{oneFriendBio}}</p>
-        <p> Réputation : <strong>{{oneFriendReputation}}</strong></p>
-        <p>Xss? : {{oneFriendXss}}</p>
-    </div>
+<div class="sectionFr">
+    <h1 class="fw-bold">{{oneFriendName}}</h1>
+    <hr>
+    <p class="fw-bold fs-4">Status: <span class="fs-5 text-success">{{getOneFriendStatus()}}</span></p>
+    <p class="fw-bold fs-4">Age: <span class="fs-5 text-dark-emphasis">{{oneFriendAge}}</span></p>
+    <p class="fw-bold fs-4">Bio: <span class="fs-5 text-dark-emphasis">{{oneFriendBio}}</span></p>
+    <hr>
+    <p class="fw-bold fs-4">XSS: <span class="fs-5 text-danger">{{oneFriendXss}}</span></p>
 </div>

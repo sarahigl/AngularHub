@@ -14,6 +14,7 @@ export class TpBindingComponent {
 
   resetInput():void {
     this.userName = "";
+    this.inputValue = true
   }
   onUpdate(eventInput:Event): void {
     this.userName == "" ? this.inputValue = true : this.inputValue = false;

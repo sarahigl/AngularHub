@@ -12,13 +12,6 @@ export class TpBindingComponent {
   userName : string = "Add userName"
   inputValue : boolean = false
 
-  constructor(){
-    if(!this.userName){
-      this.inputValue = true
-    }
-    this.inputValue = false
-  }
-
   resetInput():void {
     this.userName = "";
   }

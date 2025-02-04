@@ -19,6 +19,7 @@ export class ListFriendsComponent {
     this.listFriendsCreationStatus = "votre ami a été ajouté";
   }
   onUpdateFriendsList(eventInput:Event):void{
+    console.log((<HTMLInputElement>eventInput.target).value);
     this.listFriendsTextInput = (<HTMLInputElement>eventInput.target).value;
   }
 }

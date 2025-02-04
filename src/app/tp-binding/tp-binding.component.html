@@ -1,0 +1,7 @@
+<div class="bg-white vh-100 m-0 g-0">
+    <h3 class="ps-5 p-lg-3 mt-4 fw-bold text-dark bg-warning-subtle"> Binding ngModel</h3>
+    <p>Nom de l'utilisateur:</p>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="userName" (input)="onUpdate($event)">
+    <button [disabled]="inputValue" (click)="resetInput()"> Reset Input </button>
+    <p>{{userName}}</p>
+</div>

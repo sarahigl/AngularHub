@@ -1,8 +1,13 @@
 <div class="bg-white vh-100 m-0 g-0">
   <h3 class="ps-5 p-lg-3 mt-4 fw-bold text-dark bg-warning-subtle"> (Event Binding) :</h3>
   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" (input)="onUpdateFriendsList($event)">
-  <button type="button" class="btn btn-warning text-white mb-4 m" (click) = "onAddingFriends()">Add Friend</button>
+  <!--UTILISATION DE NG MODEL 
+    <h1>List Friends (ngModel : 2 Ways Binding)</h1>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="onUpdateFriendsList($event)">-->
+  <button type="button" class="btn btn-warning text-white m-4" (click) = "onAddingFriends()">Ajoute un ami </button>
+  <!-- <button type="button" class="btn btn-warning text-white m-4" [(ngModel)] = "onAddingFriends()">Ajoute un ami </button>-->
   <p>{{listFriendsCreationStatus}}</p>
+  <p>affichage de la valeur de l'input : </p>
   <p class="text-center">{{listFriendsTextInput}}</p>
   <h3 class="ps-5 p-lg-3 mt-4 fw-bold text-dark bg-warning-subtle">Add Friend (Binding property) :</h3>
     <h3 class="ps-5 p-lg-3 fw-bold text-dark bg-warning-subtle">List Friends : text interpolation</h3>

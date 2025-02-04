@@ -1,6 +1,10 @@
 <div class="bg-white vh-100 m-0 g-0">
+  <h3 class="ps-5 p-lg-3 mt-4 fw-bold text-dark bg-warning-subtle"> (Event Binding) :</h3>
+  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" (input)="onUpdateFriendsList($event)">
+  <button type="button" class="btn btn-warning text-white mb-4 m" (click) = "onAddingFriends()">Add Friend</button>
+  <p>{{listFriendsCreationStatus}}</p>
+  <p class="text-center">{{listFriendsTextInput}}</p>
   <h3 class="ps-5 p-lg-3 mt-4 fw-bold text-dark bg-warning-subtle">Add Friend (Binding property) :</h3>
-  <button type="button" class="btn btn-warning text-white mb-4 m" [disabled]="listFriendsAuth">Add Friend</button>
     <h3 class="ps-5 p-lg-3 fw-bold text-dark bg-warning-subtle">List Friends : text interpolation</h3>
     <app-one-friend class="card w-50 mx-auto mt-5 p-5 bg-warning-subtle rounded-5"></app-one-friend>
   </div>

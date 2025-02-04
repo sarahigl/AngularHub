@@ -6,7 +6,10 @@
     <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="onUpdateFriendsList($event)">-->
   <button type="button" class="btn btn-warning text-white m-4" (click) = "onAddingFriends()">Ajoute un ami </button>
   <!-- <button type="button" class="btn btn-warning text-white m-4" [(ngModel)] = "onAddingFriends()">Ajoute un ami </button>-->
-  <p>{{listFriendsCreationStatus}}</p>
+  <h3 *ngIf="listFriendsCreated==true;else noFriends" class="text-center">{{listFriendsCreationStatus}}</h3>
+  <ng-template #noFriends>
+    <p class="text-center">Aucun Ami... Dommage!</p>
+  </ng-template>
   <p>affichage de la valeur de l'input : </p>
   <p class="text-center">{{listFriendsTextInput}}</p>
   <h3 class="ps-5 p-lg-3 mt-4 fw-bold text-dark bg-warning-subtle">Add Friend (Binding property) :</h3>

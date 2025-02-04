@@ -1,4 +1,4 @@
-<div class="sectionFr">
+<div class="sectionFr" [ngStyle]="{'background-color': getColor()}">
     <h1 class="fw-bold">{{oneFriendName}}</h1>
     <hr>
     <p class="fw-bold fs-3">Status: <span class="fs-3 text-success">{{getOneFriendStatus()}}</span></p>

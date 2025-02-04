@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 export class TpBindingComponent {
 
   userName : string = "Add userName"
-
+  
   resetInput():void {
     this.userName = "";
   }

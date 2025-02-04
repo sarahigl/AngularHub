@@ -15,6 +15,11 @@ export class ListFriendsComponent {
   listFriendsTextInput : string = ""
   listFriendsCreated:boolean=false;
   listFriendsDisplay:boolean=false;
+  listFriendsTab: { name: string; age: number; email: string }[] = [
+    { name: 'Alice', age: 30, email: 'alice@example.com' },
+    { name: 'Bob', age: 25, email: 'bob@example.com' },
+    { name: 'Charlie', age: 35, email: 'charlie@example.com' }
+  ];
 
   constructor(){
     setTimeout(()=>{this.listFriendsAuth = true},3000)

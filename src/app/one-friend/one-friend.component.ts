@@ -11,24 +11,27 @@ export class OneFriendComponent {
   oneFriendId : number = 3
   oneFriendName : string = "Celestine Lintestine"
   oneFriendAge: number = 3
-  oneFriendStatus : string = 'ON'
+  oneFriendStatus : string = ''
   oneFriendReputation : string = 'Menteuse - Voleuse'
   oneFriendBio : string = "Celestine Lintestine graphiste pianiste et dentiste"
   oneFriendXss : string = "<script>alert('Hello, XSS')</script>"
 
   constructor(){
-    Math.random() > 0.5 ? this.oneFriendStatus = "ON" : this.oneFriendStatus = "OFF"
+    Math.random() > 0.5 ? this.oneFriendStatus = "ON" : this.oneFriendStatus = "OFF" ;
   }
+  
   getColor(): string{
     if(this.oneFriendStatus == "ON"){
       return "green";
+    }else{
+      return "red";
     }
-    return "red";
   }
   getOneFriendStatus() :string{
     if(this.oneFriendStatus == 'ON'){
       return `${this.oneFriendStatus}`;
+    }else{
+      return 'OFF'
     }
-    return 'OFF'
   }
 }

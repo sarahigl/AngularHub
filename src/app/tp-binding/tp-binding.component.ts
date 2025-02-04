@@ -10,14 +10,9 @@ import { FormsModule } from '@angular/forms';
 export class TpBindingComponent {
 
   userName : string = "Add userName"
-  inputValue : boolean = false
 
   resetInput():void {
     this.userName = "";
-    this.inputValue = true
-  }
-  onUpdate(eventInput:Event): void {
-    this.userName == "" ? this.inputValue = true : this.inputValue = false;
   }
   onUpdateUserName(eventInput:Event):void{
     console.log((<HTMLInputElement>eventInput.target).value);

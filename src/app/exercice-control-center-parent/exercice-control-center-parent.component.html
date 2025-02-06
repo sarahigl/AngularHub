@@ -1,7 +1,7 @@
 <div>Blog center Article
-  <app-exercice-control-center-child-article></app-exercice-control-center-child-article>
-  <app-exercice-control-center-child
-  [titleArticle]="titleArticle"
+  <app-exercice-control-center-child-article (articleCreated)="onArticleAd($event)" (brouillonCreated)="onBrouillonAd($event)"></app-exercice-control-center-child-article>
+  <app-exercice-control-center-child *ngFor="let article of articles; let i = index" 
+  [article]="article"
   ></app-exercice-control-center-child>
 <!-- ngFor -->
 </div>

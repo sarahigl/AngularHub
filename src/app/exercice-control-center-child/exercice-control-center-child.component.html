@@ -1,5 +1,10 @@
-<p>lis articles :</p>
+<p>liste articles :</p>
 <div class="container my-5 p-5 bg-primary">
-    <h2 class="text-black">Article-Element</h2>
-    <p>parent msg : {{ titleArticle }}</p>
+    <h2>Article-Element</h2>
+  <p><strong>Id:</strong> {{article.id}} - Titre: {{article.title}}</p>
+  <hr>
+  <p>{{article.content}}</p>
+  <p><strong>Date:</strong> {{article.date}}</p>
+  <p><strong>Autheur:</strong> {{article.author}}</p>
+  <p><strong>Type de message:</strong> {{article.type}}</p>
 </div>

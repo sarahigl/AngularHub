@@ -1,0 +1,10 @@
+
+<div class="container my-5 p-5 bg-success-subtle">
+    <!-- <app-exercice-control-center-child-article>
+        
+    </app-exercice-control-center-child-article> -->
+    <h2 class="text-center text-black">TP : Component Communication</h2>
+    <app-user-data [userData]="utilisateur"></app-user-data>
+    <app-form-data (userDataEmitMaj)="updateUser($event)"></app-form-data>
+   
+</div>

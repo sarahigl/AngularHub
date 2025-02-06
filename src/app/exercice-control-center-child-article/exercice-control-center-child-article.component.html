@@ -1,13 +1,12 @@
 <div class="container my-5 p-5 bg-warning-subtle">
-    <!-- <app-exercice-control-center-child-article>
-        
-    </app-exercice-control-center-child-article> -->
     <h2 class="text-center text-primary">child article Component</h2>
     <div class="mb-3">
+        <label class="mt-2">Author : </label>
+        <input id="messageInput" class="form-control" placeholder="Auteur" [(ngModel)]="newAuthor">
         <label for="messageInput" class="form-label" >title Article:</label>
-        <input  id="messageInput" class="form-control" placeholder="Enter a title" [(ngModel)]="titleArticle"/>
+        <input  id="messageInput" class="form-control" placeholder="Enter a title" [(ngModel)]="newTitle"/>
         <label for="messageInput" class="form-label">Content Article:</label>
-        <textarea id="messageInput" class="form-control"></textarea>
-        <button class="btn btn-primary m-2">Add Article</button><button class="btn btn-danger m-2">Draft Article</button>
+        <textarea id="messageInput" class="form-control" [(ngModel)]="newContent"></textarea>
+        <button class="btn btn-primary m-2" (click)="addArticle()">Add Article</button><button class="btn btn-danger m-2" (click)="addBrouillon()">Draft Article</button>
       </div>
 </div>

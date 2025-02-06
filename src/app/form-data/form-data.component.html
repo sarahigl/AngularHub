@@ -1,0 +1,13 @@
+<div class="container my-5 p-5 bg-warning-subtle">
+    <!-- <app-exercice-control-center-child-article>
+        
+    </app-exercice-control-center-child-article> -->
+    <p class="text-primary">formulaire edition</p>
+    <div class="mb-3">
+        <label for="messageInput" class="form-label" >userName:</label>
+        <input  id="messageInput" class="form-control" [(ngModel)]="newName" placeholder="Enter a name"/>
+        <label for="messageInput" class="form-label">Age :</label>
+        <input id="messageInput" class="form-control" [(ngModel)]="newAge">
+        <button class="btn btn-primary m-2" (click)="submitData()">Add user data</button>
+      </div>
+</div>
